@@ -1,0 +1,53 @@
+<!-- res/layout/display.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- ImageView for displaying the dog's image -->
+    <ImageView
+        android:id="@+id/imageViewDog"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+
+         />
+
+    <!-- LinearLayout for the text information -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageViewDog"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+
+        <!-- TextView for the dog's name -->
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dog Name"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <!-- TextView for the dog's breed -->
+        <TextView
+            android:id="@+id/textViewBreed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Dog Breed"
+            android:textSize="16sp"/>
+
+        <!-- TextView for the dog's country of origin -->
+        <TextView
+            android:id="@+id/textViewCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Dog Country"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</RelativeLayout>
